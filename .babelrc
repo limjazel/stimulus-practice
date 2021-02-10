@@ -1,0 +1,12 @@
+{
+    "plugins": ["@babel/plugin-proposal-class-properties"],
+    "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "> 1.6%, not dead",
+        "useBuiltIns": "entry"
+      }
+    ]
+  ]
+}
