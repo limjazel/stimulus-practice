@@ -18,5 +18,23 @@
         </fieldset>
     </form>
 
+
+    <div data-controller="popup">
+        <label for="Chair" data-popup-target="label">Copeland Chair</label>
+        <text>Four Hands</text>
+        <br>
+
+        <button type="button" data-action="click->popup#show">Change Name</button>
+
+        <div data-popup-target="modal" class="hidden">
+            <text>Public Name</text>
+            <input type="text" data-popup-target="new_name">
+            <button type="button" data-action="click->popup#update">Update</button>
+        </div>
+
+    </div>
+
+    
+
 </body>
 </html>
